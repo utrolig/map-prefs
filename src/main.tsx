@@ -9,6 +9,7 @@ import { App } from "@/App";
 
 async function main() {
   const { version } = pkgJson;
+  console.log(`[map-prefs] version: ${version}`);
   const el =
     document.getElementById("root") ??
     document.body.appendChild(document.createElement("div"));

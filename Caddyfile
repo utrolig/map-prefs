@@ -1,0 +1,7 @@
+:80 {
+    root * /srv
+    file_server
+
+    # Handle SPA routing: serve index.html for any path not matching a file
+    try_files {path} /index.html
+}
