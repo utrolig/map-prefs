@@ -1,0 +1,36 @@
+@import "tailwindcss";
+@plugin "daisyui";
+
+@utility login-separator {
+  clip-path: polygon(0% 0%, 100% 0%, 2% 70%, 43% 100%, 0% 100%);
+}
+
+@theme {
+  --font-sans:
+    "Atkinson Hyperlegible Next Variable", ui-sans-serif, system-ui, sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --font-mono:
+    "Atkinson Hyperlegible Mono Variable", ui-monospace, SFMono-Regular, Menlo,
+    Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+
+  --animate-upvote: upvote 2s ease-in-out infinite;
+
+  @keyframes upvote {
+    0% {
+      transform: translateY(0);
+    }
+    15% {
+      transform: translateY(-2px);
+    }
+    40% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+}
+
+html {
+  scrollbar-gutter: stable;
+}
