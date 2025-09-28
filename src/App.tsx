@@ -35,8 +35,6 @@ export const App = () => {
 
     if (choiceIdx === choices.length - 1) {
       setScreen("overview");
-      window.localStorage.setItem("has_been_here_before", "LOL YES INFACT");
-
       copyToClipboard();
       return;
     }
