@@ -93,7 +93,7 @@ export function getSavedPreferences(): MapMeta[] {
 
     return prefs.map((s) => ({
       ...s,
-      imgUrl: `https://dl.rtcw.eu/levelshots_rtcw/${s.name}.jpg`,
+      imgUrl: `https://dl.rtcw.eu/levelshots_rtcw/${mapNameMapping[s.name]}.jpg`,
     }));
   } catch {
     window.localStorage.removeItem(STORAGE_KEY);
